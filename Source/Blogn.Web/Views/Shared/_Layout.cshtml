@@ -4,11 +4,11 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewData[ViewKey.Title] - My ASP.NET Application</title>
-    @Styles.Render(Bundles.Styles.Theme);
+    @Styles.Render(Bundles.Styles.Theme)
     @Scripts.Render(Bundles.Scripts.Modernizr)
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -16,7 +16,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Blog-n", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
@@ -24,15 +24,22 @@
                 </ul>
             </div>
         </div>
-    </div>
-    <div class="container body-content">
+    </nav>
+    <section id="PageContent" class="container body-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
-    </div>
-
+    </section>
+    <footer id="PageFooter">
+        <div class="container">
+            <p class="copyright">&copy;  Copyright @DateTime.Now.Year Larry House</p>
+            <p class="powered-by">
+                Powered By: 
+                <a href="http://github.com/lahouse/Blog-n/">
+                    <span class="logo-blog">Blog</span><span class="logo-n">-n</span> 
+                </a>
+                - The ASP.NET MVC Blog Engine for .NET Developers
+            </p>
+        </div>
+    </footer>
     @Scripts.Render(Bundles.Scripts.JQuery)
     @Scripts.Render(Bundles.Scripts.Bootstrap)
     @RenderSection(Sections.Scripts, required: false)
