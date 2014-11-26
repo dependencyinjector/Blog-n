@@ -40,6 +40,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Contract.cs" />
+    <Compile Include="Infrastructure\ISettingManager.cs" />
+    <Compile Include="Infrastructure\IStateManager.cs" />
     <Compile Include="Properties\AssemblyInfo.Global.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

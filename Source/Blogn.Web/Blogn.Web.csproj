@@ -132,9 +132,14 @@
     <Compile Include="Constants\Sections.cs" />
     <Compile Include="Constants\ViewKey.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MvcControllerBase.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\IControllerContext.cs" />
+    <Compile Include="Infrastructure\WebControllerContext.cs" />
+    <Compile Include="Infrastructure\WebSettingManager.cs" />
+    <Compile Include="Infrastructure\WebStateManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -175,6 +180,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
+    <Folder Include="Views\MvcControllerBase\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

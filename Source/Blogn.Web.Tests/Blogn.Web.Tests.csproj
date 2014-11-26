@@ -107,7 +107,12 @@
     <Compile Include="App_Start\RouteConfigTests.cs" />
     <Compile Include="App_Start\WebApiConfigTests.cs" />
     <Compile Include="Constants\BuildInfoTests.cs" />
+    <Compile Include="Controllers\BaseControllerMocks.cs" />
     <Compile Include="Controllers\HomeControllerTests.cs" />
+    <Compile Include="Controllers\MvcControllerBaseTests.cs" />
+    <Compile Include="Controllers\MvcControllerBaseWrapper.cs" />
+    <Compile Include="Controllers\RedirectToActionController.cs" />
+    <Compile Include="Infrastructure\WebControllerContextTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
