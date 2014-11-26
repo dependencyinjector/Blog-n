@@ -13,16 +13,18 @@ namespace Blogn.Tests.Controllers
     public class UnitTest
     {
         // SetUp & Mocks
+        private BaseControllerMocks _mocks;
+
         [SetUp]
         public void SetUp()
         {
-
+            _mocks=new BaseControllerMocks();
         }
 
         [TearDown]
         public void TearDown()
         {
-
+            _mocks = null;
         }
 
         // Tests
@@ -40,7 +42,7 @@ namespace Blogn.Tests.Controllers
         // FactoryMethods
         private HomeController CreateSut()
         {
-            return new HomeController();
+            return new HomeController(_mocks.ControllerContext.Object);
         }
     }
 }
