@@ -21,6 +21,9 @@ namespace Blogn
             // Set up Dependency Injection Framework
             GlobalContainer = DependencyConfig.RegisterDependencyResolvers();
 
+            // Disable MVC Version header (Secuirty risk to leak implementation details)
+            MvcHandler.DisableMvcResponseHeader = true;
+
             // Default ASP.NET MVC 5.2 start up code
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);

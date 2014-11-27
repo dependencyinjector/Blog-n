@@ -158,6 +158,7 @@
     <Content Include="Global.asax" />
     <Content Include="Content\main.css" />
     <Content Include="Content\theme.css" />
+    <None Include="Properties\PublishProfiles\Local File System Publish.pubxml" />
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\jquery-2.1.1.js" />
